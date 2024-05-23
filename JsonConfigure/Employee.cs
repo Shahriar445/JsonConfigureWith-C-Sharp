@@ -10,15 +10,13 @@ namespace JsonConfigure
 {
     public class Employee
     {
-        [JsonInclude] // add this key to json file 
-        public string Email { get; set; }
-
-
-        [JsonIgnore]// for ignore the id to add in json file 
+      //  [JsonInclude] // add this key to json file 
+        public string Email = "shahriarhaque445@gmail.com";
+         //  [JsonIgnore]    --  for ignore the id to add in json file 
         public int Id { get; set; }
         [JsonPropertyName("Full Name")] // for changing the key name
         public string Name { get; set; }
-            public string Description { get; set; }
+        public string Description { get; set; }
         public Address Address { get; set; }
     }
     public class Address
